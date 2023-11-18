@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboard" prefHeight="430.0" prefWidth="600.0" style="-fx-background-color: #F5F7F8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #495E57;">
+         <children>
+            <Label layoutX="207.0" layoutY="13.0" text="Thoga Kade" textAlignment="CENTER" textFill="#f4ce14">
+               <font>
+                  <Font name="Showcard Gothic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="14.0" layoutY="8.0" text="Time" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="14.0" layoutY="32.0" text="Date" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="498.0" layoutY="7.0" onAction="#LoginButtonOnAction" prefHeight="35.0" prefWidth="88.0" ripplerFill="#485c55" text="Login" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/img_1.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="398.0" prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: #F5F7F8;">
+         <children>
+            <Label layoutX="195.0" layoutY="13.0" text="Copyright © 2023 iCET. All Rights Reserved" textAlignment="CENTER">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="28.0" layoutY="93.0" onAction="#RegisterButtonOnAction" text="Register" wrapText="true">
+         <ripplerFill>
+            <LinearGradient cycleMethod="REPEAT">
+               <stops>
+                  <Stop color="#fffb00" />
+                  <Stop color="#f8cb00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img_2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnCustomers" buttonType="RAISED" layoutX="28.0" layoutY="170.0" onAction="#CustomersButtonOnAction" prefHeight="60.0" prefWidth="145.0" text="Customers" wrapText="true">
+         <ripplerFill>
+            <LinearGradient cycleMethod="REPEAT">
+               <stops>
+                  <Stop color="#fffb00" />
+                  <Stop color="#f8cb00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img_12.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnOrders" buttonType="RAISED" layoutX="28.0" layoutY="327.0" onAction="#OrdersButtonOnAction" prefHeight="60.0" prefWidth="116.0" text="Orders" textAlignment="JUSTIFY" wrapText="true">
+         <ripplerFill>
+            <LinearGradient cycleMethod="REPEAT">
+               <stops>
+                  <Stop color="#fffb00" />
+                  <Stop color="#f8cb00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="47.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img_5.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnItems" buttonType="RAISED" layoutX="28.0" layoutY="249.0" onAction="#ItemsButtonOnAction" prefHeight="60.0" prefWidth="103.0" text="Items" wrapText="true">
+         <ripplerFill>
+            <LinearGradient cycleMethod="REPEAT">
+               <stops>
+                  <Stop color="#fffb00" />
+                  <Stop color="#f8cb00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="42.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img_8.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="248.0" fitWidth="308.0" layoutX="262.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/picture.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="209.0" layoutY="328.0" onAction="#PlaceOrderButtonOnAction" prefHeight="50.0" prefWidth="359.0" style="-fx-background-color: #f8cb00;" text="Place Order" textAlignment="CENTER" wrapText="true">
+         <ripplerFill>
+            <LinearGradient cycleMethod="REPEAT">
+               <stops>
+                  <Stop color="#fffb00" />
+                  <Stop color="#495e57" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img_3.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

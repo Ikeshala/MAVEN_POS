@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FDEB87;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="269.0" prefWidth="334.0">
+         <children>
+            <ImageView fitHeight="394.0" fitWidth="528.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/WG-Blog-Food-Names.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="415.0" layoutY="93.0" text="Login" textFill="#495e57">
+         <font>
+            <Font name="Leelawadee Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="153.0" text="Username" />
+      <JFXTextField fx:id="txtUsername" focusColor="#495e57" layoutX="372.0" layoutY="173.0" />
+      <Label layoutX="372.0" layoutY="226.0" text="Password" />
+      <JFXTextField fx:id="txtPassword" focusColor="#495e57" layoutX="372.0" layoutY="246.0" />
+      <JFXButton fx:id="btnLogin" alignment="CENTER" buttonType="RAISED" layoutX="372.0" layoutY="292.0" onAction="#LoginButtonOnAction" prefHeight="30.0" prefWidth="135.0" ripplerFill="WHITE" style="-fx-background-color: #495E57;" text="Login" textAlignment="CENTER" textFill="#f4ce14">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="506.0" layoutY="32.0" onAction="#SignUpButtonOnAction" ripplerFill="#074d36" text="Sign Up" textFill="#495e57" />
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="529.0" layoutY="355.0" onAction="#BackButtonOnAction" ripplerFill="#074d36" text="Back" textFill="#495e57" />
+   </children>
+</AnchorPane>
